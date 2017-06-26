@@ -1,0 +1,89 @@
+<div class="grid grid-pad" style="margin:20px;">
+<h2>category: {{page.pagecategory}}({{page.page}})</h2>
+ <a *ngFor="let category of currentList"  class="col-1-4">
+   <div class="module">
+     <h4>{{category}}</h4>
+     
+     <div style="width: 300px; margin-bottom: 20px;">
+  
+   </div>
+     <button class="btn btn-primary" (click)="loginName!=='login'? submit(): myModal1.open()">book ticket</button>
+    </div>
+ </a>
+</div>
+
+<modal #myModal>
+                <modal-header>
+                    <h3>fill Details</h3>
+                </modal-header>
+
+                <modal-content>
+  <form (ngSubmit)="loginName!=='login'? submit(): myModal1.open()" (ngSubmit)="myModal.close()">
+  <div class="form-group">
+    <label for="exampleInputEmail1">movie name:</label>
+    <div class="form-group">
+    <label for="exampleSelect1">select animation</label>
+    <select class="form-control" id="exampleSelect1">
+      <option>2D</option>
+      <option>3D</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleSelect1">select city</label>
+    <select class="form-control" id="exampleSelect1">
+      <option>hyderabad</option>
+      <option>mumbai</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="exampleSelect1">select theatre</label>
+    <select class="form-control" id="exampleSelect1">
+      <option>pvr</option>
+      <option>cinepolis	</option>
+      <option>inox</option>
+    </select>
+  </div>
+ 
+  </div>
+  <button type="submit" class="btn btn-primary" >Submit</button>
+</form>
+              
+                </modal-content>
+                <modal-footer>
+                
+                    <button class="btn btn-primary">close</button>
+                </modal-footer>
+ </modal>
+
+ <modal #myModal1>
+                <modal-header>
+                  <h3>Sign in before book ticket</h3>
+                </modal-header>
+
+                <modal-content>
+                <div class="container">
+                <div class="row">
+                   <div >        
+                      <form class="form-signin" (ngSubmit)="login(email,password)" (ngSubmit)="myModal1.close()">
+                      <div>
+                      <input type="text"  name="email" placeholder="Email" required autofocus [(ngModel)]="email" >
+                      </div>
+                      <div>
+                      <input type="password"  name="password" placeholder="Password" [(ngModel)]="password" required style="margin-top: 2px;"></div>
+                      <button class="btn btn-primary" type="submit" style="margin-top: 2px;">
+                          Sign in</button>
+                          
+                      </form>
+                       <a href="#" class="text-center new-account">Create an account </a>
+                    
+                     
+                     </div>
+                    </div>
+                  </div>
+         
+</modal-content>
+                <modal-footer>
+                
+              
+                </modal-footer>
+ </modal>   

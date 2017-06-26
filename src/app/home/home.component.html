@@ -1,0 +1,19 @@
+<div class="grid grid-pad" style="margin:20px;">
+ <a *ngFor="let catgry of categories"  class="col-1-4">
+   <div class="module">
+     <h4 >{{catgry.name}}</h4>
+     <div>
+     <select style="color:black;border-radius: 5px;" (change)="selectedOption($event.target.value,catgry)">
+        <option disabled="disabled" >select {{catgry.name}}</option>
+     	<option *ngFor="let lang of catgry.sub" [value]= "lang">
+     {{lang}}
+        </option>
+     </select>
+     </div>
+     <div style="width: 300px; margin-bottom: 20px;">
+  
+   </div>
+     <button class="btn btn-primary" (click)="showTickets()">ok</button>
+    </div>
+ </a>
+</div>

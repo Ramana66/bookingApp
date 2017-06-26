@@ -1,0 +1,200 @@
+{
+  "hall1": {
+    "seats": [
+      [
+        {
+          "id": 0,
+          "caption": 0,
+          "checked": false,
+          "booked": true
+        },
+        {
+          "id": 1,
+          "caption": 1,
+          "checked": false,
+          "booked": true
+        },
+        {
+          "id": 2,
+          "caption": 2,
+          "checked": false,
+          "booked": true
+        },
+        {
+          "id": 3,
+          "caption": 3,
+          "checked": false,
+          "booked": true
+        },
+        {
+          "id": 4,
+          "caption": 4,
+          "checked": false,
+          "booked": true
+        },
+        {
+          "id": 5,
+          "caption": 5,
+          "checked": false,
+          "booked": true
+        }
+      ],  
+      [
+        {
+          "id": 6,
+          "caption": 6,
+          "checked": false,
+          "booked": false
+        },
+        {
+          "id": 7,
+          "caption": 7,
+          "checked": false,
+          "booked": false
+        },
+        {
+          "id": 8,
+          "caption": 8,
+          "checked": false,
+          "booked": false
+        },
+        {
+          "id": 9,
+          "caption": 9,
+          "checked": false,
+          "booked": false
+        },
+        {
+          "id": 10,
+          "caption": 10,
+          "checked": false,
+          "booked": false
+        },
+        {
+          "id": 11,
+          "caption": 11,
+          "checked": false,
+          "booked": false
+        }
+      ]
+    ]
+  },
+  "hall2": {
+    "seats": [
+      [
+        {
+          "id": 0,
+          "caption": 0,
+          "checked": false,
+          "booked": true
+        },
+        {
+          "id": 1,
+          "caption": 1,
+          "checked": false,
+          "booked": true
+        },
+        {
+          "id": 2,
+          "caption": 2,
+          "checked": false,
+          "booked": true
+        },
+        {
+          "id": 3,
+          "caption": 3,
+          "checked": false,
+          "booked": true
+        },
+        {
+          "id": 4,
+          "caption": 4,
+          "checked": false,
+          "booked": true
+        },
+        {
+          "id": 5,
+          "caption": 5,
+          "checked": false,
+          "booked": false
+        }
+      ],
+      [
+        {
+          "id": 6,
+          "caption": 6,
+          "checked": false,
+          "booked": false
+        },
+        {
+          "id": 7,
+          "caption": 7,
+          "checked": false,
+          "booked": false
+        },
+        {
+          "id": 8,
+          "caption": 8,
+          "checked": false,
+          "booked": false
+        },
+        {
+          "id": 9,
+          "caption": 9,
+          "checked": false,
+          "booked": false
+        },
+        {
+          "id": 10,
+          "caption": 10,
+          "checked": false,
+          "booked": false
+        },
+        {
+          "id": 11,
+          "caption": 11,
+          "checked": false,
+          "booked": false
+        }
+      ],
+      [
+        {
+          "id": 12,
+          "caption": 12,
+          "checked": false,
+          "booked": false
+        },
+        {
+          "id": 13,
+          "caption": 13,
+          "checked": false,
+          "booked": false
+        },
+        {
+          "id": 14,
+          "caption": 14,
+          "checked": false,
+          "booked": false
+        },
+        {
+          "id": 15,
+          "caption": 15,
+          "checked": false,
+          "booked": false
+        },
+        {
+          "id": 16,
+          "caption": 16,
+          "checked": false,
+          "booked": false
+        },
+        {
+          "id": 17,
+          "caption": 17,
+          "checked": false,
+          "booked": false
+        }
+      ]
+    ]
+  }
+}

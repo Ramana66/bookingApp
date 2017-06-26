@@ -1,0 +1,81 @@
+<div style="margin: 10px;">
+
+<!--div style="float:right;"> 
+    <ul id="seatDescription">
+        <li style="background:url('app/fonts/available_seat_img.gif') no-repeat scroll 0 0 transparent;">Available Seat</li>
+        <li style="background:url('app/fonts/booked_seat_img.gif') no-repeat scroll 0 0 transparent;">Booked Seat</li>
+        <li style="background:url('app/fonts/selected_seat_img.gif') no-repeat scroll 0 0 transparent;">Selected Seat</li>
+    </ul>
+    </div-->
+ <div >
+    
+  
+  <form (ngSubmit)="loginName!=='login'? submit(): myModal1.open()" (ngSubmit)="myModal.close()">
+
+  
+  <ul class="form-group" id="options" >
+    
+    <li class="form-group" >
+    
+    <label class="form-control" id="exampleSelect1">movie :<b>llb</b></label>
+  </li>
+    <li class="form-group" >
+    <label for="exampleSelect1" id="exampleSelect2">select tickets</label>
+    <label><select (change)="selectedOption($event.target.value)" class="form-control" id="exampleSelect1" style="width: 80px;">
+      <option>1</option>
+      <option>2</option>
+    </select></label>
+  </li>
+    <li class="form-group" >
+    <label for="exampleSelect1" id="exampleSelect2">select animation</label>
+    <label>
+    <select class="form-control" id="exampleSelect1" style="width: 80px;">
+      <option>2D</option>
+      <option>3D</option>
+    </select></label>
+  </li>
+  <li class="form-group">
+    <label for="exampleSelect1" id="exampleSelect2">select city</label>
+    <label><select class="form-control" id="exampleSelect1" style="width: 100px;">
+      <option>mumbai</option>
+      <option>hyd</option>
+    </select></label>
+  </li>
+  <li class="form-group">
+    <label for="exampleSelect1" id="exampleSelect2">select theatre</label>
+    <label><select class="form-control" id="exampleSelect1" style="width: 80px;">
+      <option>pvr</option>
+      <option>cinepolis </option>
+      <option>inox</option>
+    </select></label>
+  </li>
+  <li class="form-group">
+    
+    <button type="submit" class="btn btn-success" >Submit</button>
+  </li>
+ 
+ 
+  </ul>
+  
+</form>
+    
+  </div>
+
+    
+    <table *ngFor="let input of seatingList|keys">
+    
+        <tr style="border:1px solid white;margin: 5px;"><b>{{input.key}}</b></tr>
+        <tr *ngFor="let row of input.value.seats;let j='index'">
+
+            <td *ngFor="let seat of row;let i='index'"  [ngClass]="{'active': seat.checked, 'booked': seat.booked}" (click)="selectSeats({hall:input.key, rowindex:j,seat:seat},i)">
+            <img class="image">
+                {{seat.caption}}
+            </td>
+        </tr>
+    </table>
+    <button class="btn btn-sm btn-primary" [disabled]="selectedcount" (click)= "book()" style="margin-left: 200px;margin-top: 5px;">book</button>
+
+
+
+
+</div>
